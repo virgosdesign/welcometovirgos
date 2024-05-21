@@ -1,0 +1,15 @@
+---
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import ItemGrid from '~/components/ui/ItemGrid.astro';
+import { MacbookScrollDemo } from './MacBookScrollDemo';
+---
+
+<WidgetWrapper>
+  <Headline
+    title={'Next level design'}
+    subtitle={'This is what peak developer condition looks like.'}
+    tagline={'cool shit'}
+  />
+  <MacbookScrollDemo client:load />
+</WidgetWrapper>
